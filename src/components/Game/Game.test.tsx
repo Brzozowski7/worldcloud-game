@@ -3,7 +3,6 @@ import "@testing-library/jest-dom";
 import Game from "./Game";
 import { renderWithProviders } from "../../utils/test-utils";
 
-//given
 const mockedWords = {
   words: {
     question: "Select vegetables",

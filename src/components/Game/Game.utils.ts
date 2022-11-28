@@ -6,12 +6,10 @@ export const checkAnswers = (
   userAnswersArr: string[],
   correctAnswersArr: string[]
 ) => {
-  let userCorrectAnswers;
-  let userWrongAnswers;
-  userCorrectAnswers = userAnswersArr.filter((answer) =>
+  const userCorrectAnswers = userAnswersArr.filter((answer) =>
     correctAnswersArr.includes(answer)
   );
-  userWrongAnswers = userAnswersArr.filter(
+  const userWrongAnswers = userAnswersArr.filter(
     (answer) => !correctAnswersArr.includes(answer)
   );
   return { userCorrectAnswers, userWrongAnswers };

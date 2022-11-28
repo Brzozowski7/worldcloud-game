@@ -5,7 +5,6 @@ import GameWord from "./GameWord";
 import { pallete } from "../../../misc/pallete";
 
 const mockedSetState = jest.fn;
-//given
 const mockedWord = "test";
 const mockedChosenWords = ["red", "blue", "green"];
 

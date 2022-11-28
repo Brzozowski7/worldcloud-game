@@ -26,7 +26,7 @@ export default function GameWord({
   isWrong,
 }: GameWordProps) {
   const { gameOn } = useSelector(({ game }: IStore) => game);
-  const [width, setWidth] = useState<number>();
+  const [widthPercent, setWidthPercent] = useState<number>();
 
   const handleClick = () => {
     if (gameOn) {
@@ -38,11 +38,11 @@ export default function GameWord({
     }
   };
   useEffect(() => {
-    setWidth(generateRandomWidth());
+    setWidthPercent(generateRandomWidth());
   }, []);
 
   return (
-    <Wrapper width={width} gameOn={gameOn}>
+    <Wrapper widthPercent={widthPercent} gameOn={gameOn}>
       {isCorrect && <CorrectAnswerIndicator>Good</CorrectAnswerIndicator>}
       {isWrong && <WrongAnswerIndicator>Bad</WrongAnswerIndicator>}
       <Word

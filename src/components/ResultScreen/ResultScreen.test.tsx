@@ -3,7 +3,6 @@ import "@testing-library/jest-dom";
 import { renderWithProviders } from "../../utils/test-utils";
 import ResultScreen from "./ResultScreen";
 
-//given
 const mockedScore = 5;
 const mockedUsername = "TestUser";
 
