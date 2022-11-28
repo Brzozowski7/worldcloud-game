@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { pallete } from "../../misc/pallete";
 
 export const Wrapper = styled.main`
   display: flex;
