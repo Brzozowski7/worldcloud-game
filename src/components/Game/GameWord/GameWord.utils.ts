@@ -16,5 +16,7 @@ export const guessWordColor = (
 };
 
 export const generateRandomWidth = () => {
-  return Math.floor(Math.random() * maximumWidth) + minimumWidth;
+  return (
+    Math.floor(Math.random() * (maximumWidth - minimumWidth)) + minimumWidth
+  );
 };

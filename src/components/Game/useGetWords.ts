@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 import { getRandomWordsChunk } from "./Game.utils";
 
 const useGetWords = () => {
@@ -14,8 +13,9 @@ const useGetWords = () => {
   const getWords = async () => {
     setLoading(true);
     try {
-      const response = await axios("data.json");
-      setWords(getRandomWordsChunk(response.data));
+      const response = await fetch("data.json");
+      const data = await response.json();
+      setWords(getRandomWordsChunk(data));
     } catch (error) {
       console.log(error);
       setError(true);
