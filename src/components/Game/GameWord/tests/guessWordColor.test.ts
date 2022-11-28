@@ -1,7 +1,7 @@
 import { pallete } from "../../../../misc/pallete";
 import { guessWordColor } from "../GameWord.utils";
 
-describe("checking user's score on base of selected answers", () => {
+describe("returning color on base of given props", () => {
   test.each([
     //given
     {
@@ -29,7 +29,7 @@ describe("checking user's score on base of selected answers", () => {
       expectedColor: pallete.Black,
     },
   ])(
-    "checking if score is correct",
+    "checking if returned color is correct",
     ({ isCorrect, isWrong, isClicked, expectedColor }) => {
       //when
       const color = guessWordColor(isCorrect, isWrong, isClicked);
