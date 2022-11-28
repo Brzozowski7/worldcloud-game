@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
+const initialState: IGame = {
   username: "",
-  score: null,
+  score: undefined,
   gameOn: true,
 };
 

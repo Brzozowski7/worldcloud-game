@@ -8,7 +8,7 @@ import {
 export default function ResultScreen() {
   const { username, score } = useSelector(({ game }: IStore) => game);
   return (
-    <Wrapper>
+    <Wrapper data-testid="resultScreenWrapper">
       <CongratulationsText>
         Congratulations, {username}! <br /> Your score:
       </CongratulationsText>

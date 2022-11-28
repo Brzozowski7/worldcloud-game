@@ -22,7 +22,7 @@ export const WordsWrapper = styled.div`
   border: 1px solid ${pallete.Black};
   padding: 12px;
   gap: 4px;
-  width: 50%;
+  width: 70%;
 `;
 
 export const CheckBtn = styled.button`

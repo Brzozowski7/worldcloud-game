@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { useDispatch } from "react-redux";
 import { setUsername } from "../../redux/slices/gameSlice";
 import { Wrapper, Heading, UsernameInput } from "./WelcomeScreen.styles";
-import ActionBtn from "../ActionButton/ActionBtn";
+import ActionBtn from "../ActionBtn/ActionBtn";
 
 export default function WelcomeScreen() {
   const dispatch = useDispatch();
@@ -15,9 +15,10 @@ export default function WelcomeScreen() {
   };
 
   return (
-    <Wrapper>
+    <Wrapper data-testid="welcomeScreenWrapper">
       <Heading> Worldcloud game</Heading>
       <UsernameInput
+        data-testId="usernameInput"
         ref={usernameInputRef}
         type="text"
         placeholder="Enter your nickname here..."

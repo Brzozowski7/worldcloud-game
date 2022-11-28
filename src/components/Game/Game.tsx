@@ -4,7 +4,7 @@ import { Wrapper, Question, WordsWrapper } from "./Game.styles";
 import useGetWords from "./useGetWords";
 import { checkAnswers, checkScore, capitalizeFirstLetter } from "./Game.utils";
 import GameWord from "./GameWord";
-import ActionBtn from "../ActionButton/ActionBtn";
+import ActionBtn from "../ActionBtn/ActionBtn";
 import { stopGame, setScore } from "../../redux/slices/gameSlice";
 
 export default function Game() {
@@ -39,7 +39,7 @@ export default function Game() {
   };
 
   return (
-    <Wrapper>
+    <Wrapper data-testid="gameWrapper">
       {error && "Unexpected error occurred."}
       {loading ? (
         "Loading..."

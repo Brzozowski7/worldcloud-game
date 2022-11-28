@@ -1,9 +1,11 @@
 interface IStore {
-  game: {
-    username: string;
-    score: number;
-    gameOn: boolean;
-  };
+  game: IGame;
+}
+
+interface IGame {
+  username: string;
+  score: number | undefined;
+  gameOn: boolean;
 }
 
 interface IWordsChunk {

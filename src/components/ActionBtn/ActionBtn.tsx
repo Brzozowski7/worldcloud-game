@@ -6,5 +6,5 @@ interface ActionBtnProps {
 }
 
 export default function ActionBtn({ children, onClick }: ActionBtnProps) {
-  return <StyledBtn onClick={() => onClick()}>{children}</StyledBtn>;
+  return <StyledBtn data-testid="actionBtn" onClick={() => onClick()}>{children}</StyledBtn>;
 }
