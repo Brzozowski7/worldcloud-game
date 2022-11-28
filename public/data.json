@@ -45,8 +45,8 @@
     ]
     },
     {
-    "question": "select vehicles", "all_words":
-    [
+    "question": "select vehicles", 
+    "all_words": [
     "belief",
     "wire",
     "car",
@@ -62,4 +62,4 @@
     "bus",
     "train"
     ]
-    }]
+}]

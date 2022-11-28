@@ -11,7 +11,7 @@ export const Wrapper = styled.main`
 
 export const Question = styled.p`
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
 `;
 
 export const WordsWrapper = styled.div`

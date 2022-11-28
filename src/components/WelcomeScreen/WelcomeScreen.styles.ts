@@ -9,11 +9,10 @@ export const Wrapper = styled.main`
 `;
 
 export const Heading = styled.h1`
-  font-size: 36px;
+  font-size: 2.25rem;
 `;
 
 export const UsernameInput = styled.input`
   width: 300px;
   padding: 12px 8px;
 `;
-
