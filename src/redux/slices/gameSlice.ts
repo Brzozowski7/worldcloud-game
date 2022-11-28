@@ -19,9 +19,11 @@ export const gameSlice = createSlice({
     setScore: (state, action) => {
       state.score = action.payload;
     },
+    restartGame: () => initialState,
   },
 });
 
-export const { setUsername, stopGame, setScore } = gameSlice.actions;
+export const { setUsername, stopGame, setScore, restartGame } =
+  gameSlice.actions;
 
 export default gameSlice.reducer;
