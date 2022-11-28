@@ -2,6 +2,7 @@ import { checkScore } from "../Game.utils";
 
 describe("checking user's score on base of selected answers", () => {
   test.each([
+    //given
     {
       correctAnswers: 3,
       wrongAnswers: 2,
@@ -35,6 +36,7 @@ describe("checking user's score on base of selected answers", () => {
   ])(
     "checking if score is correct",
     ({ correctAnswers, wrongAnswers, allGoodAnswers, expectedScore }) => {
+      //then
       expect(
         checkScore(correctAnswers, wrongAnswers, allGoodAnswers)
       ).toStrictEqual(expectedScore);

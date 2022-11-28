@@ -3,11 +3,13 @@ import "@testing-library/jest-dom";
 import { renderWithProviders } from "../../utils/test-utils";
 import ResultScreen from "./ResultScreen";
 
+//given
 const mockedScore = 5;
 const mockedUsername = "TestUser";
 
 describe("GameWord component tests", () => {
   test("renders points correctly", () => {
+    //when
     renderWithProviders(<ResultScreen />, {
       preloadedState: {
         game: {
@@ -17,9 +19,11 @@ describe("GameWord component tests", () => {
         },
       },
     });
+    //then
     expect(screen.getByText(`${mockedScore} points`)).toBeInTheDocument();
   });
   test("renders nickname correctly", () => {
+    //when
     renderWithProviders(<ResultScreen />, {
       preloadedState: {
         game: {
@@ -29,6 +33,7 @@ describe("GameWord component tests", () => {
         },
       },
     });
+    //then
     expect(
       screen.getByText(`Congratulations, ${mockedUsername}! Your score:`)
     ).toBeInTheDocument();

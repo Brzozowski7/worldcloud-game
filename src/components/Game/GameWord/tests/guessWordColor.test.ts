@@ -3,6 +3,7 @@ import { guessWordColor } from "../GameWord.utils";
 
 describe("checking user's score on base of selected answers", () => {
   test.each([
+    //given
     {
       isCorrect: true,
       isWrong: false,
@@ -30,7 +31,9 @@ describe("checking user's score on base of selected answers", () => {
   ])(
     "checking if score is correct",
     ({ isCorrect, isWrong, isClicked, expectedColor }) => {
+      //when
       const color = guessWordColor(isCorrect, isWrong, isClicked);
+      //then
       expect(color).toStrictEqual(expectedColor);
     }
   );

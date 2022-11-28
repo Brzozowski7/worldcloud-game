@@ -18,7 +18,7 @@ export default function WelcomeScreen() {
     <Wrapper data-testid="welcomeScreenWrapper">
       <Heading> Worldcloud game</Heading>
       <UsernameInput
-        data-testId="usernameInput"
+        data-testid="usernameInput"
         ref={usernameInputRef}
         type="text"
         placeholder="Enter your nickname here..."

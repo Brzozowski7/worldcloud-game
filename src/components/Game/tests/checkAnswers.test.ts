@@ -2,6 +2,7 @@ import { checkAnswers } from "../Game.utils";
 
 describe("checking users answers function", () => {
   test.each([
+    //given
     {
       usersAnswers: ["red", "blue", "car"],
       correctAnswers: ["red", "blue", "green"],
@@ -34,10 +35,12 @@ describe("checking users answers function", () => {
       expectedGoodAnswers,
       expectedBadAnswers,
     }) => {
+      //when
       const { userCorrectAnswers, userWrongAnswers } = checkAnswers(
         usersAnswers,
         correctAnswers
       );
+      //then
       expect(userCorrectAnswers).toStrictEqual(expectedGoodAnswers);
       expect(userWrongAnswers).toStrictEqual(expectedBadAnswers);
     }
