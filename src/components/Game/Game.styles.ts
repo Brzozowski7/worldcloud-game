@@ -17,7 +17,6 @@ export const Question = styled.p`
 export const WordsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   border: 1px solid ${pallete.Black};
