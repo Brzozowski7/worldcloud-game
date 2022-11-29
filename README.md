@@ -1,6 +1,6 @@
 # Webcloud-game
 
-W projekcie wykorzystałem reduxa. Jest to dosyć spore rozwiązanie jak dla tak prostej aplikacji, jednakże chciałem pokazać jego podstawową znajomość. Ten sam efekt możnaby uzyskać wykorzystując react-router-dom, reactowy Context lub zarządzać odpowiednimi stanami z poziomu App.tsx.
+W projekcie wykorzystałem reduxa. Jest to dosyć spore rozwiązanie jak dla tak prostej aplikacji, jednakże chciałem pokazać jego podstawową znajomość. Ten sam efekt można by uzyskać wykorzystując react-router-dom, reactowy Context lub zarządzać odpowiednimi stanami z poziomu App.tsx.
 
 Pozwoliłem sobie również na dodanie przycisku resetującego stan gry na ekranie z wynikiem. Mam nadzieję, że to nie problem.
 
